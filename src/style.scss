@@ -1,0 +1,122 @@
+
+$bodyText: 16px/26px "Montserrat";
+$comonText: 11px/15px "Montserrat";
+
+$darkViolet: #162345;
+$red: #DA2328;
+$dark: #131313;
+$grey: #4E4E4E;
+$lightGrey: #B9B9B9;
+$bg-light: #F6F6F6;
+
+
+h1 {
+    font: 54px/66px "Montserrat";
+    font-weight: bold;
+    color: $dark;
+}
+h2 {
+    font: 42px/51px "Montserrat";
+    font-weight: 600;
+    color: $dark;
+}
+h3 {
+    font: 15px/26px "Montserrat";
+    font-weight: 600;
+    color: $dark;
+}
+.descriptor {
+    font: 10px/16px "Montserrat";
+    color: $dark;
+    text-transform: uppercase;
+}
+.bigButton {
+    font: 16px/20px "Montserrat";
+    font-weight: bold;    
+    letter-spacing: 0.1em;
+    border: 0;
+}
+.bigButton:hover {
+    box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.smallButton {
+    font: 14px/17px "Montserrat";
+    font-weight: bold;
+    color: $dark;
+    border: 0;
+}
+.smallButton:hover {
+    box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.material-icons.md-16 {
+    font-size: 16px;
+    color: $lightGrey;
+    padding: 4px;
+}
+
+//---------------NAVBAR----------------------------
+.myNavbar {
+    width: 1240px;
+    display: flex;
+    margin: 0 auto;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $grey;
+}
+.navElem {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font: $comonText;
+    padding: 10px;
+    span {
+        color: $grey;
+        display: flex;
+        align-items: center;
+    }
+    p {
+        margin: 0;
+        color: $grey;
+        font: 18px/20px "Montserrat";
+    }
+    .navBucket {
+        font: 16px/20px "Montserrat";
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+    }
+    .navBucket span {
+        padding-left: 12px;
+    }
+    .callMeButt {
+        font-size: 12px;
+        width: 210px;
+        height: 45px;
+        border-radius: 10px;
+        background: $red;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+
+        .md-16 {
+            color: white;
+        }
+    }
+}
+.myNavbar img {
+    padding: 5px;
+}
+
+//-----------------------------SMALLNAV----------------------
+.smallNav span {
+    font: 12px/15px Montserrat;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+
+

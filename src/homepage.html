@@ -7,7 +7,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href = "style.css">
 
@@ -15,61 +15,282 @@
     </head>
     <body>
         <header>
-            <nav class = "myNavbar">
-                <img src="images/logo.png">
-                <div class = "navElem">
-                    <a href = "changeme">
-                        <span>
-                            <i class = "material-icons md-16">location_on</i>
-                            Выберите город:<b>&nbsp;Петропавловск-Камчатский</b>
-                            <i class = "material-icons md-16">arrow_drop_down</i>
-                        </span>
-                        <p>ул. Ленинградская, 100</p>
-                    </a>
-                </div >
-                <div class = "navElem">
-                    <a href = "changeme">
-                        <span><i class = "material-icons md-16">call</i>Для всех регионов:</span>
-                        <p>8 (800) 551-23-30</p>
-                    </a>
-                </div>
-                <div class = "navElem">
-                    <a href = "changeme">
-                        <span><i class = "material-icons md-16">call</i>Для Петропавловск-Камчатского</span>
-                        <p>8 (958) 581-53-52</p>
-                    </a>
-                </div>
-                <div class = "navElem">
-                    <a href = "changeme" class = "navBucket">
-                        <img src = "images/bucket.jpg">
-                        <span><b>2 000 </b>&nbsp;&#8381;</span>
-                    </a>
-                </div>
-                <div class = "navElem">
-                    <button class = "bigButton callMeButt"><i class = "material-icons md-16">call</i>Перезвоните мне</button>
-                </div>
-            </nav>
-            <nav class = "myNavbar smallNav">
-                <div class = "navElem">
-                    <a href = "changeme" class = "navBucket"><span>Главная</span></a>
-                </div>
-                <div class = "navElem">
-                    <a href = "changeme" class = "navBucket"><span>Каталог</span></a>
-                </div>
-                <div class = "navElem">
-                    <a href = "changeme" class = "navBucket"><span>Доставка и оплата</span></a>
-                </div>
-                <div class = "navElem">
-                    <a href = "changeme" class = "navBucket"><span>Полезная информация<i class = "material-icons md-18">arrow_drop_down</i></span></a>
-                </div>
-                <div class = "navElem">
-                    <a href = "changeme" class = "navBucket"><span>О компании</span></a>
-                </div>
-                <div class = "navElem">
-                    <a href = "changeme" class = "navBucket"><span>Контакты</span></a>
-                </div>
-            </nav>
+            <div class = "wrapper-myNavbar"></nav>
+                <nav class = "myNavbar">
+                    <img class = "navlogo" src="images/logo.png">
+                    <div class = "navElem">
+                        <a href = "changeme">
+                            <span>
+                                <i class = "material-icons md-16">location_on</i>
+                                Выберите город:<b>&nbsp;Петропавловск-Камчатский</b>
+                                <i class = "material-icons md-16">arrow_drop_down</i>
+                            </span>
+                            <p>ул. Ленинградская, 100</p>
+                        </a>
+                    </div >
+                    <div class = "navElem">
+                        <a href = "changeme">
+                            <span><i class = "material-icons md-16">call</i>Для всех регионов:</span>
+                            <p>8 (800) 551-23-30</p>
+                        </a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme">
+                            <span><i class = "material-icons md-16">call</i>Для Петропавловск-Камчатского</span>
+                            <p>8 (958) 581-53-52</p>
+                        </a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme" class = "navBucket">
+                            <img src = "images/bucket.jpg">
+                            <span><b>2 000 </b>&nbsp;&#8381;</span>
+                        </a>
+                    </div>
+                    <div class = "navElem">
+                        <button class = "bigButton callMeButt"><i class = "material-icons md-16">call</i>Перезвоните мне</button>
+                    </div>
+                </nav>
+                <nav class = "myNavbar smallNav">
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Главная</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Каталог</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Доставка и оплата</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Полезная информация<i class = "material-icons md-18">arrow_drop_down</i></span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>О компании</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Контакты</span></a>
+                    </div>
+                </nav>
+            </div>
         </header>
+        <main class = "hpMain">
+            <div class = "wrapper-hpMain">
+                <h1 class = "hpMain__title">
+                    <b>Персональные регистраторы</b> <i class = "hpMain__title_thin"> (нагрудные камеры) от 3990 <span>руб.</span></i>
+                </h1>
+                <div class = hpMain__item>
+                    <i class = "material-icons">done</i>
+                    В наличии в Петропавловск-Камчатском
+                </div>
+                <div class = hpMain__item>
+                    <i class = "material-icons">done</i>
+                    Получение в день оформления заказа
+                </div>
+                <form>
+                    <div class = "form__row">
+                        <div class = "form__wrapper-field">
+                            <p class = "form__label">* Ваше имя</p>
+                            <div class = "form__inputItem">
+                                <i class = "material-icons md-16">person</i>
+                                <input placeholder="Введите имя">
+                            </div>
+                        </div>
+                        <div class = "form__wrapper-field">
+                            <p class = "form__label">* Ваш телефон</p>
+                            <div class = "form__inputItem">
+                                <i class = "material-icons md-16">phone</i>
+                                <input placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                            </div>
+                        </div>
+                    </div>
+                    <button class = "bigButton form__consultButt">Получить констультацию</button>
+                </form>
+            </div>
+        </main>
+        <div class = "wrapper-hpArticle">
+            <article class = "hpArticle">
+                <h2 class = "hpArticle__title">
+                    Кто и для чего применяют <b>персональные регистраторы?</b>
+                </h2>
+                <label class = "hpArticle__slider">
+                    <input type="checkbox">
+                    <div class = "hpArticle__slider__box">
+                        <span class = "hpArticle__slider__butt"></span>
+                        <p class = "who">Кто?</p>
+                        <p class = "why">Для чего?</p>
+                    </div>
+                </label>
+                <div class = "hpArticle__list">
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            01
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Сотрудники правоохранительных органов
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            02
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Охранники
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            03
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Егеря
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            04
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Газовики
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            05
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Шахтеры
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            06
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Железнодорожники
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            07
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Пограничники
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            08
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Инкассаторы
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            09
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Экспедиторы
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            10
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Курьеры
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            11
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Путешественники
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            12
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Блогеры
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            13
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            … и еще около 97 сфер применения носимых регистраторов.
+                        </p>
+                    </div>
+                </div>
+                <div class = "hpArticle__list hpArticle__list_why">
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            01
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            При осуществлении контроля над сотрудниками.
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            02
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Запись видео в качестве доказательной базы при решении спорных и конфликтных ситуаций.
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            03
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            В качестве дополнительной безопасности в ситуациях, когда возникает провокация.
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            04
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Снижение коррупционной̆ составляющей̆ в работе правоохранительных и иных органов.
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            05
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Возможность выявления и разбора проблемы при чрезвычайных происшествиях.
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            06
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Фиксация рабочего времени сотрудников с доказательной базой.
+                        </p>
+                    </div>
+                    <div class = "hpArticle__list__item">
+                        <div class = "hpArticle__list__item__number">
+                            07
+                        </div>
+                        <p class = "hpArticle__list__item__text">
+                            Для записи видео в научных и туристических экспедициях, путешествиях.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <div class = "wrapper-hpArticleImg">
+                <img src = "images/360.png">
+            </div>
+            <img id = "hpImg__squares" src = "images/squares.png">
+            <img id = "hpImg__snake" src = "images/snake.png">
+            <img id = "hpImg__paragram" src = "images/paragram.png">
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

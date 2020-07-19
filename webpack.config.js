@@ -16,6 +16,11 @@ module.exports = {
             inject: false,
             filename: "index.html",
         }),
+        new htmlPlugin({
+            template: "src/card.html",
+            inject: false,
+            filename: "card.html",
+        }),
         new cssExtract({
             filename: "style.css",
         }),        

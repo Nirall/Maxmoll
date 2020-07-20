@@ -1,3 +1,6 @@
+$bodyText: 16px/26px "Montserrat";
+$comonText: 11px/15px "Montserrat";
+
 $darkViolet: #162345;
 $red: #DA2328;
 $dark: #131313;
@@ -5,14 +8,31 @@ $grey: #4E4E4E;
 $lightGrey: #B9B9B9;
 $bg-light: #F6F6F6;
 
+.cardPage__body {
+    background: $bg-light;
+}
+
+.cardPage__main {
+    width: 1240px;
+    margin: 0 auto;
+}
+.cardPage__route {
+    color: $lightGrey;
+    font: 12px/16px "Montserrat";
+    padding: 39px 0 38px 0;
+    display: flex;
+    align-items: center;
+}
+
 main {
     padding: 148px 0 0 0;
 }
 
 .cardProd {
-    width: 1240px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cardProd__img {
@@ -54,6 +74,7 @@ main {
     position: absolute;
     top: 50%;
     margin: -28px 0 0 0;
+    cursor: pointer;
 }
 .cardProd__butt_left {
     left: 13px;
@@ -116,6 +137,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
     .cardProd__counter__change_minus {
         border-radius: 10px 0 0 10px;
@@ -135,6 +157,9 @@ main {
     display: flex;
     justify-content: space-between;
 }
+.wrapper-cardProd__textButts {
+    margin: 48px 0 40px 0;
+}
 .cardProd__textButt {
     width: 288px;
     height: 60px;
@@ -153,6 +178,9 @@ main {
     padding: 0 10px 0 0;
 }
 .cardProd__textBlock__row__item {
+    width: 165px;
+    font: 12px/16px "Montserrat";
+
     i {
         width: 61px;
         height: 61px;
@@ -164,10 +192,188 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0 0 15px 0;
     }
     p {
         font: 16px/26px "Montserrat";
         color: $dark;
         font-weight: bold;
+        margin: 0 0 10px 0;
     }
-} 
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        padding: 0 0 6px 0;
+    }
+    li {
+        list-style-type: none;
+    }
+    li::before {
+        width: 5px;
+        display: inline-block;
+        color: $darkViolet;
+        content: "\25cf";
+        padding-right: 15px;
+    }
+    img {
+        padding: 0 10px 0 0;
+    }
+}
+.cardProd__buttons {
+    margin: 85px 0 0 0;
+    position: relative;
+    width: 100%;
+    background: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.cardProd__buttons__butt {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font: 14px/17px "Montserrat";
+    font-weight: bold;
+    color: $dark;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.cardProd__buttons__butt_active {
+    background: $darkViolet;
+    color: white;
+}
+.cardProd__buttons__content {
+    width: 816px;
+    margin: 85px auto 40px auto;
+    font: $bodyText;
+}
+.cardProd__buttons__description {
+    display: none;
+}
+.cardProd__buttons__description h3 {
+    margin: 0 0 43px 0;
+}
+.cardProd__buttons__review {
+    display: flex;
+    margin: 0 0 80px 0;
+}
+.cardProd__buttons__review__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 25px 0 0;
+    flex: 0 0 auto;
+}
+.cardProd__buttons__review__avatar_none {
+    background: $lightGrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: $lightGrey;
+}
+.cardProd__buttons__review__date {
+    font: 12px/16px "Montserrat";
+    color: $grey;
+}
+.cardProd__buttons__review__name {
+    font: 20px/24px "Montserrat";
+    margin: 0 0 15px 0;
+    font-weight: bold;
+    color: $dark;
+}
+.cardProd__buttons__review__text {
+    font: 16px/26px "Montserrat";
+    color: $grey;
+}
+
+//---------------------------------FORM----------------------
+.cardProd__buttons__reviews__form {
+    margin: 0 0 15px 0;
+}
+.form__label_dark{
+    color: $dark;
+}
+.form__inputItem_392px {
+    width: 392px;
+
+    input {
+        width: 342px;
+    }
+}
+
+.form__textarea {
+    width: 100%;
+    height: 90px;
+    border: 0;
+    padding: 10px 28px 5px 28px;
+    box-sizing: border-box;
+    box-shadow: 10px 20px 45px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    outline: none;
+    font-family: "Montserrat";
+    font-size: 16px;
+    resize: none;
+}
+.form__textarea::placeholder {
+    opacity: 0.5;
+}
+.cardProd__buttons__reviews__form__title {
+    text-align: center;
+    margin: 0;
+}
+.form__sendButt {
+    width: 288px;
+    height: 60px;
+    background: $darkViolet;
+    margin: 38px auto 0 auto;
+}
+//---------------------------------------------------------------
+
+//-------------------SIMILAR BLOCK------------------------
+.similarBlock {
+    width: 100%;
+    background: white;
+    height: 800px;
+    padding: 60px 0 0 0;
+}
+.similarBlock__title {
+    text-align: center;
+    //margin: 73px 0;
+    font: 54px/54px "Bebas Neue";
+    font-weight: bold;
+}
+//---------------------------------------------------------------
+
+//-------------------teaserCard------------------------
+.teaserCard {
+    width: 288px;
+    height: 545px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.teaserCard__labels {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+}
+.teaserCard__label {
+    padding: 0 0 13px 0;
+}
+.teaserCard__img {
+    margin: 58px 0 0 0;
+    height: 229px;
+}
+

@@ -13,7 +13,7 @@
 
         <title>Test</title>
     </head>
-    <body>
+    <body class = "cardPage__body">
         <header>
             <div class = "wrapper-myNavbar"></nav>
                 <nav class = "myNavbar">
@@ -43,6 +43,7 @@
                     <div class = "navElem">
                         <a href = "changeme" class = "navBucket">
                             <img src = "images/bucket.jpg">
+                            <div class = "navBucket__quan">2</div>
                             <span><b>2 000 </b>&nbsp;&#8381;</span>
                         </a>
                     </div>
@@ -72,7 +73,10 @@
                 </nav>
             </div>
         </header>
-        <main>
+        <main class = "cardPage__main">
+            <p class = "cardPage__route">
+                <i class = "material-icons md-16">home</i>&nbsp;&nbsp;/&nbsp;&nbsp;Название товара "Самая лучшая камера"
+            </p>
             <div class = "cardProd">
                 <div class = "cardProd__img">
                     <img src = "images/img1.png" width = "276px" height = "449px">
@@ -103,27 +107,212 @@
                         <span class = "cardProd__textBlock__oldPrice">15050 &#8381;</span>
                         <span class = "cardProd__textBlock__price">4 970 &#8381;</span>
                     </div>
-                    <div class = "cardProd__textBlock__row">
-                        <button class = "bigButton cardProd__textButt cardProd__textButt_inBucket">
-                            <i class = "material-icons">shopping_cart</i>
-                            В корзину
-                        </button>
-                        <button class = "bigButton cardProd__textButt cardProd__textButt_1click">
-                            Купить в 1 клик
-                        </button>
+                    <div class = "wrapper-cardProd__textButts">
+                        <div class = "cardProd__textBlock__row">
+                            <button class = "bigButton cardProd__textButt cardProd__textButt_inBucket">
+                                <i class = "material-icons">shopping_cart</i>
+                                В корзину
+                            </button>
+                            <button class = "bigButton cardProd__textButt cardProd__textButt_1click">
+                                Купить в 1 клик
+                            </button>
+                        </div>
                     </div>
                     <div class = "cardProd__textBlock__row">
                         <div class = "cardProd__textBlock__row__item">
                             <i class = "material-icons">location_on</i>
                             <p>В наличии:</p>
-                            г. Петропавловск-Камчатский: ул. Ленина 12
+                            г. Петропавловск-Камчатский:<br /> ул. Ленина 12
+                        </div>
+                        <div class = "cardProd__textBlock__row__item">
+                            <i class = "material-icons">account_balance_wallet</i>
+                            <p>Способы оплаты:</p>
+                            <ul>
+                                <li>Оплата при получении</li>
+                                <li>Безналичный расчет</li>
+                                <li>По счету для юр.лиц</li>
+                            </ul>
+                        </div>
+                        <div class = "cardProd__textBlock__row__item">
+                            <i><img src = "images/share.png"></i>
+                            <p>Поделиться:</p>
+                            <div class = "wrapper-icons">
+                                <img src = "images/vk.png">
+                                <img src = "images/fb.png">
+                                <img src = "images/tw.png">
+                                <img src = "images/ok.png">
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class = "cardProd__buttons">
+                    <div class = "cardProd__buttons__butt cardProd__buttons__butt_active">Описание</div>
+                    <div class = "cardProd__buttons__butt">Характеристики</div>
+                    <div class = "cardProd__buttons__butt">Отзывы</div>
+                    <div class = "cardProd__buttons__butt">Вопрос-ответ</div>
+                </div>
+                <div class = "cardProd__buttons__content">
+                    <div class = "cardProd__buttons__description">
+                        <h3 class = "cardProd__buttons__description__title">
+                            Описание для самой лучшей камеры
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Auctor nulla tortor volutpat, venenatis, neque pulvinar nunc leo bibendum. 
+                            Eu feugiat vulputate id libero velit purus tortor. Montes, nullam elementum 
+                            ullamcorper volutpat eros, aenean vitae nisi feugiat. Amet, pellentesque quis 
+                            ultrices nisl et vehicula mi. Duis consectetur in bibendum amet, dolor luctus. 
+                            Velit porta elit ut aenean volutpat scelerisque massa aliquam. Lorem ipsum dolor 
+                            sit amet, consectetur adipiscing elit. Auctor nulla tortor volutpat, venenatis, 
+                            neque pulvinar nunc leo bibendum. Eu feugiat vulputate id libero velit purus tortor. 
+                            Montes, nullam elementum ullamcorper volutpat eros, aenean vitae nisi feugiat. Amet, 
+                            pellentesque quis ultrices nisl et vehicula mi. Duis consectetur in bibendum amet, 
+                            dolor luctus. Velit porta elit ut aenean volutpat scelerisque massa aliquam.</p>
+                    </div>
+                    <div class = "cardProd__buttons__reviews">
+                        <div class = "cardProd__buttons__review">
+                            <img class  = "cardProd__buttons__review__avatar" src = "images/avatar1.jpg">
+                            <div>
+                                <p class = "cardProd__buttons__review__date">01.12.2019, 04:50</p>
+                                <p class = "cardProd__buttons__review__name">Инна Иванова</p>
+                                <p class = "cardProd__buttons__review__text">Можно ли установить глушилку сотовой связи в автомобиль?</p>
+                            </div>
+                        </div>
+                        <div class = "cardProd__buttons__review">
+                            <div class = "cardProd__buttons__review__avatar cardProd__buttons__review__avatar_none">
+                                <i class = "material-icons">person</i>
+                            </div>
+                            <div>
+                                <p class = "cardProd__buttons__review__date">01.12.2019, 04:50</p>
+                                <p class = "cardProd__buttons__review__name">Василий Пупкин</p>
+                                <p class = "cardProd__buttons__review__text">Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit. Velit tincidunt odio et sapien, sem. Volutpat 
+                                    elementum pharetra aenean porta sit. Sagittis, est, ultrices placerat tristique 
+                                    velit semper aliquet dictum. </p>
+                            </div>
+                        </div>
+                        <form class = "cardProd__buttons__reviews__form">
+                            <h3 class = "cardProd__buttons__reviews__form__title">Оставить отзыв о товаре</h3>
+                            <div class = "form__row">
+                                <div class = "form__wrapper-field">
+                                    <p class = "form__label form__label_dark">* Ваше имя</p>
+                                    <div class = "form__inputItem form__inputItem_392px">
+                                        <i class = "material-icons md-16">person</i>
+                                        <input type = "text" placeholder="Введите имя" required minlength = "2" maxlength = "15">
+                                    </div>
+                                </div>
+                                <div class = "form__wrapper-field">
+                                    <p class = "form__label form__label_dark">* Ваш телефон</p>
+                                    <div class = "form__inputItem form__inputItem_392px">
+                                        <i class = "material-icons md-16">phone</i>
+                                        <input type = "tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required pattern = "\+7\(\d{3}\)\d{3}-\d{2}-\d{2}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "form__wrapper-field">
+                                <p class = "form__label form__label_dark">* Ваш отзыв</p>                                
+                                <textarea placeholder="Оставьте ваш отзыв" class = "form__textarea" required minlength = "1" maxlength = "400"></textarea>
+                            </div>
+                            <button class = "bigButton form__sendButt">Отправить</button>
+                        </form>
+                    </div>
+                </div>
             </div>
+            <img class = "hpImg__squares" src = "images/squares.png">
+            <img class = "hpImg__snake" src = "images/snake.png">
+            <img class = "hpImg__paragram" src = "images/paragram.png">
         </main>
-        
-
+        <div class = "similarBlock">
+            <p class = "similarBlock__title">ПОХОЖИЕ ТОВАРЫ</p>
+            <div class = "teaserCard">
+                <div class = "teaserCard__labels">
+                    <img class = "teaserCard__label" src = "images/50per.png">
+                    <img class = "teaserCard__label" src = "images/hit.png">
+                    <img class = "teaserCard__label" src = "images/new.png">
+                </div>
+                <img class = "teaserCard__img" src = "images/teaserImg1.png">
+            </div>
+        </div>
+        <footer>
+            <div class = "wrapper-myNavbar"></nav>
+                <nav class = "myNavbar smallNav smallNav_footer">
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Главная</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Каталог</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Доставка и оплата</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Полезная информация<i class = "material-icons md-18">arrow_drop_down</i></span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>О компании</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Контакты</span></a>
+                    </div>
+                </nav>
+                <nav class = "myNavbar">
+                    <img class = "navlogo" src="images/logo.png">
+                    <div class = "navElem">
+                        <a href = "changeme">
+                            <span>
+                                <i class = "material-icons md-16">location_on</i>
+                                Выберите город:<b>&nbsp;Петропавловск-Камчатский</b>
+                                <i class = "material-icons md-16">arrow_drop_down</i>
+                            </span>
+                            <p>ул. Ленинградская, 100</p>
+                        </a>
+                    </div >
+                    <div class = "navElem">
+                        <a href = "changeme">
+                            <span><i class = "material-icons md-16">call</i>Для всех регионов:</span>
+                            <p>8 (800) 551-23-30</p>
+                        </a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme">
+                            <span><i class = "material-icons md-16">call</i>Для Петропавловск-Камчатского</span>
+                            <p>8 (958) 581-53-52</p>
+                        </a>
+                    </div>
+                    <div class = "navElem">
+                        <div class = "wrappers-navElem-social">
+                            <img src = "images/vk.png">
+                            <img src = "images/fb.png">
+                            <img src = "images/inst.png">
+                        </div>
+                    </div>
+                    <div class = "navElem">
+                        <button class = "bigButton callMeButt"><i class = "material-icons md-16">call</i>Перезвоните мне</button>
+                    </div>
+                </nav>
+                <div class = "footerLight">
+                    <div class = "footerLight__elem_date">
+                        ООО Третья планета ИНН 7017448330 ОГРН 1187031063053
+                    </div>
+                    <div>
+                        Возврат и обмен
+                    </div>
+                    <div>
+                        Гарантии
+                    </div>
+                    <div>
+                        Политика конфиденциальности
+                    </div>
+                    <div>
+                        Карта сайта
+                    </div>
+                    <i class = " material-icons footerLight__butt">keyboard_arrow_up</i>
+                </div>
+                
+                <div class = "footerDark">
+                    <span>Все права защищены&nbsp;&nbsp;</span><a href = "changeme">regcam.ru</a><span>&nbsp;&nbsp;2020 ©</span> 
+                </div>
+            </div>
+        </footer>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

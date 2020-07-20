@@ -43,6 +43,7 @@
                     <div class = "navElem">
                         <a href = "changeme" class = "navBucket">
                             <img src = "images/bucket.jpg">
+                            <div class = "navBucket__quan">2</div>
                             <span><b>2 000 </b>&nbsp;&#8381;</span>
                         </a>
                     </div>
@@ -91,14 +92,14 @@
                             <p class = "form__label">* Ваше имя</p>
                             <div class = "form__inputItem">
                                 <i class = "material-icons md-16">person</i>
-                                <input placeholder="Введите имя">
+                                <input type = "text" placeholder="Введите имя" required minlength = "2" maxlength = "15">
                             </div>
                         </div>
                         <div class = "form__wrapper-field">
                             <p class = "form__label">* Ваш телефон</p>
                             <div class = "form__inputItem">
                                 <i class = "material-icons md-16">phone</i>
-                                <input placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                                <input type = "tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required pattern = "\+7\(\d{3}\)\d{3}-\d{2}-\d{2}">
                             </div>
                         </div>
                     </div>
@@ -287,10 +288,90 @@
             <div class = "wrapper-hpArticleImg">
                 <img src = "images/360.png">
             </div>
-            <img id = "hpImg__squares" src = "images/squares.png">
-            <img id = "hpImg__snake" src = "images/snake.png">
-            <img id = "hpImg__paragram" src = "images/paragram.png">
+            <img class = "hpImg__squares" src = "images/squares.png">
+            <img class = "hpImg__snake" src = "images/snake.png">
+            <img class = "hpImg__paragram" src = "images/paragram.png">
         </div>
+        <footer>
+            <div class = "wrapper-myNavbar"></nav>
+                <nav class = "myNavbar smallNav smallNav_footer">
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Главная</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Каталог</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Доставка и оплата</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Полезная информация<i class = "material-icons md-18">arrow_drop_down</i></span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>О компании</span></a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme"><span>Контакты</span></a>
+                    </div>
+                </nav>
+                <nav class = "myNavbar">
+                    <img class = "navlogo" src="images/logo.png">
+                    <div class = "navElem">
+                        <a href = "changeme">
+                            <span>
+                                <i class = "material-icons md-16">location_on</i>
+                                Выберите город:<b>&nbsp;Петропавловск-Камчатский</b>
+                                <i class = "material-icons md-16">arrow_drop_down</i>
+                            </span>
+                            <p>ул. Ленинградская, 100</p>
+                        </a>
+                    </div >
+                    <div class = "navElem">
+                        <a href = "changeme">
+                            <span><i class = "material-icons md-16">call</i>Для всех регионов:</span>
+                            <p>8 (800) 551-23-30</p>
+                        </a>
+                    </div>
+                    <div class = "navElem">
+                        <a href = "changeme">
+                            <span><i class = "material-icons md-16">call</i>Для Петропавловск-Камчатского</span>
+                            <p>8 (958) 581-53-52</p>
+                        </a>
+                    </div>
+                    <div class = "navElem">
+                        <div class = "wrappers-navElem-social">
+                            <img src = "images/vk.png">
+                            <img src = "images/fb.png">
+                            <img src = "images/inst.png">
+                        </div>
+                    </div>
+                    <div class = "navElem">
+                        <button class = "bigButton callMeButt"><i class = "material-icons md-16">call</i>Перезвоните мне</button>
+                    </div>
+                </nav>
+                <div class = "footerLight">
+                    <div class = "footerLight__elem_date">
+                        ООО Третья планета ИНН 7017448330 ОГРН 1187031063053
+                    </div>
+                    <div>
+                        Возврат и обмен
+                    </div>
+                    <div>
+                        Гарантии
+                    </div>
+                    <div>
+                        Политика конфиденциальности
+                    </div>
+                    <div>
+                        Карта сайта
+                    </div>
+                    <i class = " material-icons footerLight__butt">keyboard_arrow_up</i>
+                </div>  
+                <div class = "footerDark">
+                    <span>Все права защищены&nbsp;&nbsp;</span><a href = "changeme">regcam.ru</a><span>&nbsp;&nbsp;2020 ©</span> 
+                </div>
+            </div>
+        </footer>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

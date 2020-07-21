@@ -350,6 +350,11 @@ main {
     font: 54px/54px "Bebas Neue";
     font-weight: bold;
 }
+.similarBlock__cards {
+    display: flex;
+    justify-content: center;
+    margin: 78px 0 0 0;
+}
 //---------------------------------------------------------------
 
 //-------------------teaserCard------------------------
@@ -361,7 +366,8 @@ main {
     background: white;
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .teaserCard__labels {
     display: flex;
@@ -376,4 +382,55 @@ main {
     margin: 58px 0 0 0;
     height: 229px;
 }
+.teaserCard__title {
+    font: 16px/22px "Montserrat";
+    font-weight: 600;
+    text-align: center;
+    margin: 32px 0 60px 0;
+}
+.teaserCard__priceBlock {
+    height: 73px;
+    width: 100%;
+    background: $bg-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teaserCard__priceBlock__oldPrice {
+    font: 20px/24px "Montserrat";
+    text-decoration-line: line-through;
+    color: $lightGrey;
+    margin: 0 20px 0 0;
+}
+.teaserCard__buyBlock {
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid $darkViolet;
+    display: flex;
+    justify-content: space-between;
+}
+.teaserCard__buyBlock__text {
+    width:50%;
+    font: 12px/15px "Montserrat";
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $darkViolet;
+}
+.teaserCard__buyBlock__butt {
+    width: 50%;
+    background: $darkViolet;
+    color: white;
+    border-radius: 0 0 10px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 12px/15px "Montserrat";
+}
+
+
+
 

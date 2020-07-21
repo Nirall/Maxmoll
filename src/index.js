@@ -24,3 +24,5 @@ import "./images/teaserImg1.png";
 import "./fonts/BebasNeueRegular.eot";
 import "./fonts/BebasNeueRegular.ttf";
 import "./fonts/BebasNeueRegular.woff";
+
+import "./func.js"

@@ -62,7 +62,12 @@
                         <a href = "changeme"><span>Доставка и оплата</span></a>
                     </div>
                     <div class = "navElem">
-                        <a href = "changeme"><span>Полезная информация<i class = "material-icons md-18">arrow_drop_down</i></span></a>
+                        <a href = "changeme" class = "dropdown-toggle" data-toggle="dropdown" role="button"><span>Полезная информация<i class = "material-icons md-18">arrow_drop_down</i></span></a>
+                        <div class = "dropdown-menu">
+                            <a class="dropdown-item" href="changeme">Акции</a>
+                            <a class="dropdown-item" href="changeme">Новости</a>
+                            <a class="dropdown-item" href="changeme">Статьи</a>
+                        </div>
                     </div>
                     <div class = "navElem">
                         <a href = "changeme"><span>О компании</span></a>
@@ -99,13 +104,13 @@
                         Название товара "Самая лучшая камера"
                     </h1>
                     <div class = "wrapper-cardProd__counter">
-                        <div class = "cardProd__counter">
+                        <div class = "cardProd__counter" id = "counter1">
                             <div class = "cardProd__counter__change cardProd__counter__change_minus">-</div>
                             <div class = "cardProd__counter__quantity">1</div>
                             <div class = "cardProd__counter__change cardProd__counter__change_plus">+</div>
                         </div>
-                        <span class = "cardProd__textBlock__oldPrice">15050 &#8381;</span>
-                        <span class = "cardProd__textBlock__price">4 970 &#8381;</span>
+                        <span class = "cardProd__textBlock__oldPrice">...</span>
+                        <span class = "cardProd__textBlock__price">...</span>
                     </div>
                     <div class = "wrapper-cardProd__textButts">
                         <div class = "cardProd__textBlock__row">
@@ -145,75 +150,78 @@
                         </div>
                     </div>
                 </div>
-                <div class = "cardProd__buttons">
-                    <div class = "cardProd__buttons__butt cardProd__buttons__butt_active">Описание</div>
-                    <div class = "cardProd__buttons__butt">Характеристики</div>
-                    <div class = "cardProd__buttons__butt">Отзывы</div>
-                    <div class = "cardProd__buttons__butt">Вопрос-ответ</div>
-                </div>
-                <div class = "cardProd__buttons__content">
-                    <div class = "cardProd__buttons__description">
-                        <h3 class = "cardProd__buttons__description__title">
-                            Описание для самой лучшей камеры
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Auctor nulla tortor volutpat, venenatis, neque pulvinar nunc leo bibendum. 
-                            Eu feugiat vulputate id libero velit purus tortor. Montes, nullam elementum 
-                            ullamcorper volutpat eros, aenean vitae nisi feugiat. Amet, pellentesque quis 
-                            ultrices nisl et vehicula mi. Duis consectetur in bibendum amet, dolor luctus. 
-                            Velit porta elit ut aenean volutpat scelerisque massa aliquam. Lorem ipsum dolor 
-                            sit amet, consectetur adipiscing elit. Auctor nulla tortor volutpat, venenatis, 
-                            neque pulvinar nunc leo bibendum. Eu feugiat vulputate id libero velit purus tortor. 
-                            Montes, nullam elementum ullamcorper volutpat eros, aenean vitae nisi feugiat. Amet, 
-                            pellentesque quis ultrices nisl et vehicula mi. Duis consectetur in bibendum amet, 
-                            dolor luctus. Velit porta elit ut aenean volutpat scelerisque massa aliquam.</p>
-                    </div>
-                    <div class = "cardProd__buttons__reviews">
-                        <div class = "cardProd__buttons__review">
-                            <img class  = "cardProd__buttons__review__avatar" src = "images/avatar1.jpg">
-                            <div>
-                                <p class = "cardProd__buttons__review__date">01.12.2019, 04:50</p>
-                                <p class = "cardProd__buttons__review__name">Инна Иванова</p>
-                                <p class = "cardProd__buttons__review__text">Можно ли установить глушилку сотовой связи в автомобиль?</p>
-                            </div>
+                <div class = "nav nav-pills wrapper-cardProd__buttons" role = "tablist">
+                    <div class = "cardProd__buttons"></div>
+                    <div class = "nav-link active cardProd__buttons__butt" data-toggle = "pill" href = "#pills-description" role = "tab">Описание</div>
+                    <div class = "nav-link cardProd__buttons__butt" data-toggle = "pill" href = "#pills-properties" role = "tab">Характеристики</div>
+                    <div class = "nav-link cardProd__buttons__butt" data-toggle = "pill" href = "#pills-reviews" role = "tab">Отзывы</div>
+                    <div class = "nav-link cardProd__buttons__butt" data-toggle = "pill" href = "#pills-questions" role = "tab">Вопрос-ответ</div>
+                    <div class = "tab-content cardProd__buttons__content">
+                        <div class = "tab-pane fade show active cardProd__buttons__description" id = "pills-description" role="tab-panel">
+                            <h3 class = "cardProd__buttons__description__title">
+                                Описание для самой лучшей камеры
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Auctor nulla tortor volutpat, venenatis, neque pulvinar nunc leo bibendum. 
+                                Eu feugiat vulputate id libero velit purus tortor. Montes, nullam elementum 
+                                ullamcorper volutpat eros, aenean vitae nisi feugiat. Amet, pellentesque quis 
+                                ultrices nisl et vehicula mi. Duis consectetur in bibendum amet, dolor luctus. 
+                                Velit porta elit ut aenean volutpat scelerisque massa aliquam. Lorem ipsum dolor 
+                                sit amet, consectetur adipiscing elit. Auctor nulla tortor volutpat, venenatis, 
+                                neque pulvinar nunc leo bibendum. Eu feugiat vulputate id libero velit purus tortor. 
+                                Montes, nullam elementum ullamcorper volutpat eros, aenean vitae nisi feugiat. Amet, 
+                                pellentesque quis ultrices nisl et vehicula mi. Duis consectetur in bibendum amet, 
+                                dolor luctus. Velit porta elit ut aenean volutpat scelerisque massa aliquam.</p>
                         </div>
-                        <div class = "cardProd__buttons__review">
-                            <div class = "cardProd__buttons__review__avatar cardProd__buttons__review__avatar_none">
-                                <i class = "material-icons">person</i>
+                        <div class = "tab-pane fade" id = "pills-properties" role="tab-panel">Some properties</div>
+                        <div class = "tab-pane fade cardProd__buttons__reviews" id = "pills-reviews" role="tab-panel">
+                            <div class = "cardProd__buttons__review">
+                                <img class  = "cardProd__buttons__review__avatar" src = "images/avatar1.jpg">
+                                <div>
+                                    <p class = "cardProd__buttons__review__date">01.12.2019, 04:50</p>
+                                    <p class = "cardProd__buttons__review__name">Инна Иванова</p>
+                                    <p class = "cardProd__buttons__review__text">Можно ли установить глушилку сотовой связи в автомобиль?</p>
+                                </div>
                             </div>
-                            <div>
-                                <p class = "cardProd__buttons__review__date">01.12.2019, 04:50</p>
-                                <p class = "cardProd__buttons__review__name">Василий Пупкин</p>
-                                <p class = "cardProd__buttons__review__text">Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit. Velit tincidunt odio et sapien, sem. Volutpat 
-                                    elementum pharetra aenean porta sit. Sagittis, est, ultrices placerat tristique 
-                                    velit semper aliquet dictum. </p>
+                            <div class = "cardProd__buttons__review">
+                                <div class = "cardProd__buttons__review__avatar cardProd__buttons__review__avatar_none">
+                                    <i class = "material-icons">person</i>
+                                </div>
+                                <div>
+                                    <p class = "cardProd__buttons__review__date">01.12.2019, 04:50</p>
+                                    <p class = "cardProd__buttons__review__name">Василий Пупкин</p>
+                                    <p class = "cardProd__buttons__review__text">Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit. Velit tincidunt odio et sapien, sem. Volutpat 
+                                        elementum pharetra aenean porta sit. Sagittis, est, ultrices placerat tristique 
+                                        velit semper aliquet dictum. </p>
+                                </div>
                             </div>
-                        </div>
-                        <form class = "cardProd__buttons__reviews__form">
-                            <h3 class = "cardProd__buttons__reviews__form__title">Оставить отзыв о товаре</h3>
-                            <div class = "form__row">
-                                <div class = "form__wrapper-field">
-                                    <p class = "form__label form__label_dark">* Ваше имя</p>
-                                    <div class = "form__inputItem form__inputItem_392px">
-                                        <i class = "material-icons md-16">person</i>
-                                        <input type = "text" placeholder="Введите имя" required minlength = "2" maxlength = "15">
+                            <form class = "cardProd__buttons__reviews__form">
+                                <h3 class = "cardProd__buttons__reviews__form__title">Оставить отзыв о товаре</h3>
+                                <div class = "form__row">
+                                    <div class = "form__wrapper-field">
+                                        <p class = "form__label form__label_dark">* Ваше имя</p>
+                                        <div class = "form__inputItem form__inputItem_392px">
+                                            <i class = "material-icons md-16">person</i>
+                                            <input type = "text" placeholder="Введите имя" required minlength = "2" maxlength = "15">
+                                        </div>
+                                    </div>
+                                    <div class = "form__wrapper-field">
+                                        <p class = "form__label form__label_dark">* Ваш телефон</p>
+                                        <div class = "form__inputItem form__inputItem_392px">
+                                            <i class = "material-icons md-16">phone</i>
+                                            <input type = "tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required pattern = "\+7\(\d{3}\)\d{3}-\d{2}-\d{2}">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class = "form__wrapper-field">
-                                    <p class = "form__label form__label_dark">* Ваш телефон</p>
-                                    <div class = "form__inputItem form__inputItem_392px">
-                                        <i class = "material-icons md-16">phone</i>
-                                        <input type = "tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required pattern = "\+7\(\d{3}\)\d{3}-\d{2}-\d{2}">
-                                    </div>
+                                    <p class = "form__label form__label_dark">* Ваш отзыв</p>                                
+                                    <textarea placeholder="Оставьте ваш отзыв" class = "form__textarea" required minlength = "1" maxlength = "400"></textarea>
                                 </div>
-                            </div>
-                            <div class = "form__wrapper-field">
-                                <p class = "form__label form__label_dark">* Ваш отзыв</p>                                
-                                <textarea placeholder="Оставьте ваш отзыв" class = "form__textarea" required minlength = "1" maxlength = "400"></textarea>
-                            </div>
-                            <button class = "bigButton form__sendButt">Отправить</button>
-                        </form>
+                                <button class = "bigButton form__sendButt">Отправить</button>
+                            </form>
+                        </div>
+                        <div class = "tab-pane fade" id = "pills-questions" role="tab-panel">Some questions</div>
                     </div>
                 </div>
             </div>
@@ -261,7 +269,12 @@
                         <a href = "changeme"><span>Доставка и оплата</span></a>
                     </div>
                     <div class = "navElem">
-                        <a href = "changeme"><span>Полезная информация<i class = "material-icons md-18">arrow_drop_down</i></span></a>
+                        <a href = "changeme" class = "dropdown-toggle" data-toggle="dropdown" role="button"><span>Полезная информация<i class = "material-icons md-18">arrow_drop_down</i></span></a>
+                        <div class = "dropdown-menu">
+                            <a class="dropdown-item" href="changeme">Акции</a>
+                            <a class="dropdown-item" href="changeme">Новости</a>
+                            <a class="dropdown-item" href="changeme">Статьи</a>
+                        </div>
                     </div>
                     <div class = "navElem">
                         <a href = "changeme"><span>О компании</span></a>
@@ -334,5 +347,6 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src = "bundle.js"></script>
     </body>
 </html>

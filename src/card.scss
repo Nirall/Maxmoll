@@ -221,9 +221,12 @@ main {
         padding: 0 10px 0 0;
     }
 }
+.wrapper-cardProd__buttons {
+    margin: 25px 0 0 0;
+}
 .cardProd__buttons {
-    margin: 85px 0 0 0;
     position: relative;
+    top: 60px;
     width: 100%;
     background: white;
     height: 60px;
@@ -231,10 +234,11 @@ main {
     align-items: center;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    z-index: 100;
 }
 .cardProd__buttons__butt {
     width: 25%;
-    height: 100%;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,10 +248,10 @@ main {
     color: $dark;
     transition: 0.4s;
     border-radius: 10px;
+    z-index: 101;
 }
-.cardProd__buttons__butt_active {
+.cardProd__buttons__butt.nav-link.active {
     background: $darkViolet;
-    color: white;
 }
 .cardProd__buttons__content {
     width: 816px;

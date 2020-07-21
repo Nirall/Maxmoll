@@ -1,5 +1,5 @@
 $bodyText: 16px/26px "Montserrat";
-$comonText: 11px/15px "Montserrat";
+$comonText: 12px/15px "Montserrat";
 
 $darkViolet: #162345;
 $red: #DA2328;
@@ -79,6 +79,9 @@ h3 {
 }
 p {
     margin: 0;
+}
+a:hover {
+    text-decoration: none;
 }
 
 
@@ -162,6 +165,26 @@ p {
 }
 .wrappers-navElem-social img {
     margin: 0 16px 0 0;
+}
+.dropdown-toggle:after {
+    content: none;
+}
+//----------------BOOTSTRAP-DROPDOWN RESTYLING------------------
+.navElem .dropdown-toggle {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+}
+.dropdown-menu {
+    border: 0;
+    width: 220px;
+    font: $comonText;
+    box-shadow: none;
+    border-radius: 0 0 10px 10px;
+}
+.dropdown-item {
+    height: 33px;
+    text-align: center;
 }
 
 

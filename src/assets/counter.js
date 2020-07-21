@@ -32,3 +32,9 @@ class Counter {
 
 const counter1 = new Counter($("#counter1"), 15050, 4970);
 
+
+
+
+
+
+

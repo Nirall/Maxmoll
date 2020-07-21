@@ -15,6 +15,37 @@
     </head>
     <body class = "cardPage__body">
         <header>
+            <div class="modal fade" id="callMeModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Мы перезвоним</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class = "form__wrapper-field">
+                                    <p class = "form__label">* Ваше имя</p>
+                                    <div class = "form__inputItem">
+                                        <i class = "material-icons md-16">person</i>
+                                        <input type = "text" placeholder="Введите имя" required minlength = "2" maxlength = "15">
+                                    </div>
+                                </div>
+                                <div class = "form__wrapper-field">
+                                    <p class = "form__label">* Ваш телефон</p>
+                                    <div class = "form__inputItem">
+                                        <i class = "material-icons md-16">phone</i>
+                                        <input type = "tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required pattern = "\+7\(\d{3}\)\d{3}-\d{2}-\d{2}">
+                                    </div>
+                                </div>
+                                <button class = "bigButton callMeButt modalButt"><i class = "material-icons md-16">call</i>Перезвоните мне</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class = "wrapper-myNavbar"></nav>
                 <nav class = "myNavbar">
                     <img class = "navlogo" src="images/logo.png">
@@ -48,7 +79,7 @@
                         </a>
                     </div>
                     <div class = "navElem">
-                        <button class = "bigButton callMeButt"><i class = "material-icons md-16">call</i>Перезвоните мне</button>
+                        <button class = "bigButton callMeButt" data-toggle="modal" data-target="#callMeModal" ><i class = "material-icons md-16">call</i>Перезвоните мне</button>
                     </div>
                 </nav>
                 <nav class = "myNavbar smallNav">
@@ -315,7 +346,7 @@
                         </div>
                     </div>
                     <div class = "navElem">
-                        <button class = "bigButton callMeButt"><i class = "material-icons md-16">call</i>Перезвоните мне</button>
+                        <button class = "bigButton callMeButt" data-toggle="modal" data-target="#callMeModal" ><i class = "material-icons md-16">call</i>Перезвоните мне</button>
                     </div>
                 </nav>
                 <div class = "footerLight">

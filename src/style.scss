@@ -145,19 +145,19 @@ a:hover {
         color: $dark;
         font-size: 10px;
     }
-    .callMeButt {
-        font-size: 12px;
-        width: 210px;
-        height: 45px;
-        
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
+}
+.callMeButt {
+    font-size: 12px;
+    width: 210px;
+    height: 45px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 
-        .md-16 {
-            color: white;
-        }
+    .md-16 {
+        color: white;
     }
 }
 .navlogo {
@@ -286,6 +286,35 @@ a:hover {
     margin: 30px 0 0 0;
 }
 
+//---------------------------------BOOTSTRAP MODAL DIALOG RESTYLING---------------------
+.modal-dialog {
+    width: 356px;
+    background: $bg-light;
+    border-radius: 10px;
+    padding: 10px;
+
+    .form__label {
+        color: $dark;
+    }
+    .form__textarea {
+        margin: 65px 0 0 0;
+        width: 305px;
+    }
+    .form__consultButt {
+        width: 305px;
+    }
+}
+.modal-content {
+    border: 0;
+    background: $bg-light;
+}
+.modalButt {
+    margin: 50px auto 10px auto;
+}
+.ui-autocomplete {
+    z-index: 1100;
+    position: absolute;
+}
 //---------------------------------ARTICLE - HOMEPAGE---------------------
 .wrapper-hpArticle {
     margin: 85px 0 0 340px;

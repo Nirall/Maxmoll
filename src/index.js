@@ -25,4 +25,10 @@ import "./fonts/BebasNeueRegular.eot";
 import "./fonts/BebasNeueRegular.ttf";
 import "./fonts/BebasNeueRegular.woff";
 
-import "./func.js"
+import "./assets/counter.js";
+import "./assets/cities.js";
+
+
+
+
+

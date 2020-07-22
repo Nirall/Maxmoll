@@ -91,14 +91,15 @@
                         <div class="modal-body">
                             <form>
                                 <div class = "form__wrapper-field">
-                                    <p class = "form__label">* Город</p>
                                     <div class = "form__inputItem">
-                                        <i class = "material-icons md-16">person</i>
+                                        <i class = "material-icons md-16">search</i>
                                         <input type = "text" placeholder="Введите город" id = "citiesInput" required minlength = "2" maxlength = "25">
                                     </div>
                                 </div>
-                                <button class = "bigButton callMeButt modalButt">Выбрать</button>
+                                <button class = "bigButton" data-dismiss="modal">Выбрать</button>
                             </form>
+                            <div class = "wrapper-form__citiesList">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -414,8 +415,8 @@
                 </nav>
                 <nav class = "myNavbar">
                     <img class = "navlogo" src="images/logo.png">
-                    <div class = "navElem">
-                        <a href = "changeme">
+                    <div class = "navElem" data-toggle="modal" data-target="#citiesModal">
+                        <a href = "#">
                             <span>
                                 <i class = "material-icons md-16">location_on</i>
                                 Выберите город:<b>&nbsp;Петропавловск-Камчатский</b>

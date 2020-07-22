@@ -19,6 +19,7 @@ const cities = [
     "Казань",
     "Калининград",
     "Калуга",
+    "Каменск-Уральский",
     "Кемерово",
     "Киров",
     "Комсомольск-на-Амуре",
@@ -77,3 +78,34 @@ const cities = [
 $("#citiesInput").autocomplete({
     source: cities
 });
+
+const entry = $("#citiesModal .wrapper-form__citiesList");
+let entryBlock = createBlock("А");
+entry.append(entryBlock);
+
+let letter = "А";
+let newletter = "А";
+let targetInput = $("#citiesInput");
+for (let i of cities) {
+    newletter = i[0];
+    item = createItem(i);
+    if (newletter !== letter) {
+        entryBlock = createBlock(newletter);
+        entry.append(entryBlock);
+        letter = newletter;
+    }
+    entryBlock.append(item);
+}
+
+function createItem(cont) {
+    let item = $("<p>", {text: cont});
+    item.click(() => {
+        targetInput.val(item.html());
+    })
+    return item;
+}
+function createBlock(cont) {
+    let blockCities = $('<div>', {class: "form__citiesBlock"});
+    blockCities.append(`<h3>${cont}</h3>`);
+    return blockCities;
+}

@@ -313,7 +313,56 @@ a:hover {
 }
 .ui-autocomplete {
     z-index: 1100;
-    position: absolute;
+    transform: translateY(-20px);
+    border-top: 0;
+    font: $comonText;
+}
+#citiesModal .modal-dialog {
+    width: 1240px;
+    height: 800px;
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .modal-body {
+        max-height: 700px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        form {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
+    .form__wrapper-field {
+        margin: 0 50px 0 0;
+    }
+    .wrapper-form__citiesList {
+        max-height: 650px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .form__citiesBlock {
+        width: 200px;
+        margin: 10px;
+        font: $comonText;
+
+        p {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        h3 {
+            padding: 0 0 10px 0;
+        }
+    }
 }
 //---------------------------------ARTICLE - HOMEPAGE---------------------
 .wrapper-hpArticle {
@@ -498,6 +547,13 @@ a:hover {
         font-style: italic;
     }
 }
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 1240px;
+    }
+}
+
 
 
 

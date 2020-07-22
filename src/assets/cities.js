@@ -79,28 +79,29 @@ $("#citiesInput").autocomplete({
     source: cities
 });
 
-const entry = $("#citiesModal .wrapper-form__citiesList");
-let entryBlock = createBlock("А");
-entry.append(entryBlock);
-
-let letter = "А";
-let newletter = "А";
-let targetInput = $("#citiesInput");
-for (let i of cities) {
-    newletter = i[0];
-    item = createItem(i);
-    if (newletter !== letter) {
-        entryBlock = createBlock(newletter);
-        entry.append(entryBlock);
-        letter = newletter;
+(function() {
+    const entry = $("#citiesModal .wrapper-form__citiesList");
+    let entryBlock = createBlock("А");
+    entry.append(entryBlock);
+    let letter = "А";
+    let newletter = "А";
+    let targetInput = $("#citiesInput");
+    for (let i of cities) {
+        newletter = i[0];
+        item = createItem(i, targetInput);
+        if (newletter !== letter) {
+            entryBlock = createBlock(newletter);
+            entry.append(entryBlock);
+            letter = newletter;
+        }
+        entryBlock.append(item);
     }
-    entryBlock.append(item);
-}
+})()
 
-function createItem(cont) {
+function createItem(cont, target) {
     let item = $("<p>", {text: cont});
     item.click(() => {
-        targetInput.val(item.html());
+        target.val(item.html());
     })
     return item;
 }

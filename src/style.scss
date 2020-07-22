@@ -452,6 +452,7 @@ a:hover {
     .hpArticle__list__item__number {
         width: 50px;
         height: 50px;
+        flex: 0 0 auto;
         background: white;
         box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.05);
         border-radius: 50%;
@@ -468,7 +469,7 @@ a:hover {
         letter-spacing: 0.1em;
     }
 
-    .hpArticle__list_why {
+    #list_why {
         display: none;
     }
 //--------------------IMAGES HOMEPAGE-------------------

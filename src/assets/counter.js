@@ -7,7 +7,6 @@ class Counter {
         this.quan = 1;
         this.oldPrice = oldPrice;
         this.price = price;
-        this.init = this.init.bind(this);
         this.init();
         this.update();
     }

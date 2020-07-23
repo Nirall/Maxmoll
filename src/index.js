@@ -31,7 +31,6 @@ import "./assets/cities.js";
 $(".hpArticle__slider__box").click(() => {
     $("#list_who").toggle();
     $("#list_why").toggle();
-    console.log("asdf");
 })
 
 
